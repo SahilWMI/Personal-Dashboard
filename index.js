@@ -8,9 +8,8 @@ try {
   document.getElementById("author").textContent = `By: ${data.user.name}`;
   console.log(data.user.name);
 } catch (err) {
-  document.body.style.backgroundImage = `url(https://images.unsplash.com/photo-1533208705114-4f6b97d68ab1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA4MjczNDd8&ixlib=rb-4.1.0&q=80&w=1080
-)`;
-  document.getElementById("author").textContent = `By: Ray Hennessy`;
+  document.body.style.backgroundImage = `url(https://images.unsplash.com/photo-1496851925983-9c879a7038de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA5MTU2MjR8&ixlib=rb-4.1.0&q=80&w=1080)`;
+  document.getElementById("author").textContent = `By: Luca Campioni`;
 }
 
 try {
@@ -25,8 +24,8 @@ try {
     `;
   document.getElementById("crypto").innerHTML += `
         <p>🎯: $${data.market_data.current_price.usd}</p>
-        <p>👆: $${data.market_data.high_24h.usd}</p>
-        <p>👇: $${data.market_data.low_24h.usd}</p>
+        <p>📈: $${data.market_data.high_24h.usd}</p>
+        <p>📉: $${data.market_data.low_24h.usd}</p>
     `;
 } catch (err) {
   console.error(err);
